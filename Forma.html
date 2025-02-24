@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body style="background-color:powderblue;">
+    <form id="jobApplicationForm" method="POST" action="/register">
+        <h1 style="color: brown;">Formulario</h1>
+        <label for="name">Nombre :</label>
+        <input type="text" name="name"required>
+
+        <label for="email">Correo Electrónico</label>
+        <input type="email" name="email"required>
+
+        <label for="telefono">Telefono </label>
+        <input type="tel" name="phone"required>
+
+        <label for="experience">Experiencia Laboral</label>
+        <input type="experience" name="experience" required>
+
+        <label for="position">Puesto Opcionales</label>
+        <select name="select">
+            <option value="Recepcionista">Recepcionista</option>
+            <option value="Ingeniero">Ingeniero</option>
+            <option value="Guardia de Seguridad">Guardia de Seguridad</option>
+            <option value="Product Manager">Product Manager</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="SEND">
+    </form>
+
+   
+    
+</body>
+</html>
