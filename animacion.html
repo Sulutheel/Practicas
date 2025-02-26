@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Animado</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .banner {
+            background-color: #146179;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 0px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeInMove 2s ease-in-out;
+        }
+
+        .cta {
+            padding: 10px 20px;
+            background-color: white;
+            color: #1cb7f5;
+            border: none;
+            border-radius: 0px;
+            cursor: pointer;
+            transition: transform 0.3s; 
+        }
+
+        .cta:hover {
+            transform: scale(1.1); 
+        }
+
+        @keyframes fadeInMove {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            50% {
+                opacity: 0.5;
+                transform: translateY(100px); 
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) translateX(50);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+    <h1>❄️"Bienvenidos a mis Videojuegos Favoritos"❄️</h1>
+    <p>Aqui estan los diferentes tipos de imagenes de cada videojuego a eleccion</p>
+            <img src="black desert.png" alt="black desert.png">
+            <br>
+    <button class="cta">!Black Desert!</button>
+    </div>
+   
+</body>
+</html>
