@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            background-color: gray;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        tbody tr:nth-child(odd) {
+            background-color: #4e4e52;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+        tbody tr:nth-child(5) {
+            background-color: rgb(240, 222, 238);
+            color: white;
+        }
+
+        tbody tr:first-child {
+            background-color: #4e4e52;
+            color: white;
+        }
+
+        tbody tr:last-child {
+            background-color: #8da32d;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Caracteristicas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Albert Einstein</td>
+                <td>Fisico teorico, conocido por la teoria de la telatividad</td>
+            </tr>
+            <tr>
+                <td>Frida Kahlo</td>
+                <td>Fue una pintora mexicana. Su obra gira temáticamente en torno a las vivencias de su vida personal.</td>
+            </tr>
+            <tr>
+                <td>Nelson Mandela</td>
+                <td>Fue el primer mandatario de raza negra que encabezó el poder ejecutivo, y el primero en resultar elegido por sufragio universal en su país.</td>
+            </tr>
+            <tr>
+                <td>Isaac Newton</td>
+                <td>Fue un físico, teólogo, inventor, alquimista y matemático inglés.</td>
+            </tr>
+            <tr>
+            <td>Steve Jobs</td>
+            <td> Fue un empresario, diseñador industrial, magnate empresarial, propietario de medios e inversor estadounidense.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

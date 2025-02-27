@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="v">
+   <button id="btnNombre"onclick="compararvalor();">Click Here</button>
+    <div id="resultado"></div>
+    <script>
+        function compararvalor(){
+            const v = document.getElementById("v").value;
+          
+                if (!isNaN(v)) {
+                    
+                    const resultado = document.getElementById("resultado");
+                    resultado.innerHTML = `Correcto`;
+                    
+                 } 
+                 else{
+                    resultado.innerHTML = `Disculpa el resultado es incorrecto`;  
+                 }
+ }
+
+
+        
+    </script>
+</body>
+</html>
