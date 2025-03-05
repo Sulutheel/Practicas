@@ -1,0 +1,54 @@
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fb;
+            color: #333;
+        }
+        header {
+            background-color: #fdfdfd; 
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        section {
+            padding: 30px;
+            margin: 20px;
+            background-color: rgb(85, 102, 122);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        h1, h2 {
+            font-weight: 600;
+            color: #850707;
+        }
+        .video-container, .audio-container {
+            margin-bottom: 40px;
+        }
+        video, audio {
+            border-radius: 10px;
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #010c03;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #010c01;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
