@@ -1,0 +1,9 @@
+curl -X POST localhost:5000/api/v1/users -H "Content-Type: application/json" -d "{\"id\": 4, \"nombre\": \"Maria\", \"edad\": 28, \"email\": \"maria@gmail.com\"}"
+curl -X POST localhost:5000/api/v1/users -H "Content-Type: application/json" -d "{\"id\": 4, \"nombre\": \"olga\", \"edad\": 33}"
+curl -X DELETE localhost:5000/api/v1/users/1ea69b99-fab6-4ddd-be8b-1b1b5189c197
+curl -X PUT localhost:5000/api/v1/users/b5c6069b-023f-49a4-a5d4-97c36ccd4828 -H "Content-Type: application/json" -d {\"nombre\":\"Arturo\",\"edad\":28,\"email\":\"arturo@gmail.com\"}"
+
+
+curl -X POST localhost:5000/api/v1/coches -H "Content-Type: application/json" -d "{\"id\": 1, \"marca\": \"Toyota\", \"modelo\": \"Corolla\", \"año\": 2020}"
+curl -X POST localhost:5000/api/v1/coches -H "Content-Type: application/json" -d "{\"id\": 2, \"marca\": \"Honda\", \"modelo\": \"Civic\", \"año\": 2021}"
+curl -X POST localhost:5000/api/v1/coches -H "Content-Type: application/json" -d "{\"id\": 2, \"marca\": \"Ford\", \"modelo\": \"Fusion\", \"año\": 2019}"
